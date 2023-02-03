@@ -3,7 +3,6 @@ export class Calculator {
   constructor(){ 
   }
   mercury = (earthYears) => {
-
     return Math.round(earthYears / .24);
   }
   venus = (earthYears) => {
