@@ -41,12 +41,9 @@ describe('Calculator, and beforeEach', () => {
   })
 
   test ('5: should return planet ages for years since a specific birthday', () => {
-    expect(theCalculator.user1.mercuryYearsSince).toEqual
-    theCalculator.user1.venusYearsSince
-    theCalculator.user1.marsYearsSince
-    theCalculator.user1.jupiterYearSince
+    theCalculator.mercuryYearsSinceCalc(47).toEqual(221);
+    theCalculator.venusYearsSinceCalc(47).toEqual(85);
+    theCalculator.marsYearsSinceCalc(47).toEqual(28);
+    theCalculator.jupiterYearsSinceCalc(47).toEqual(4);
   })
-
-
-
 }); //ends BeforeEach------------------------
