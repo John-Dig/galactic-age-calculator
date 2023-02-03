@@ -47,7 +47,6 @@ describe('Calculator, and beforeEach', () => {
     expect(user1.jupiterYearsSinceCalc(47)).toEqual(4);
   })
   test ('6: should return years to pass until x birthday on each of 5 planets', () => {
-    console.log (theCalculator);
     user1.yearsUntilCalc(111);
     expect(user1.mercuryYearsUntil).toEqual(46);
     expect(user1.venusYearsUntil).toEqual(18);
