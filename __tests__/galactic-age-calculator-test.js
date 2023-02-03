@@ -1,10 +1,13 @@
 import {Calculator} from './../src/js/calculator';
 import {User} from './../src/js/user';
 
-//beforeEach
+//beforeEach---------------------------
 describe('Calculator, and beforeEach', () => {
-  let theCalculator = new Calculator;
-  let user1 = new User;
+  const theCalculator = new Calculator;
+  const user1 = new User;
+  theCalculator.user1 = user1;
+  
+  
   beforeEach(() => {
     //add to this later
   })  
@@ -26,5 +29,14 @@ describe('Calculator, and beforeEach', () => {
   //test 3.1
   test('should return age in mercury years from input in earth years', () => {
     expect(theCalculator.mercury(100)).toEqual(24)
+    console.log(theCalculator);
   })
-}); //ends BeforeEach from test 1.x
+
+  //test 4
+  test('should return age in all 4 planet years from input in earth years', () => {
+    expect(the)
+  })
+
+
+
+}); //ends BeforeEach------------------------
