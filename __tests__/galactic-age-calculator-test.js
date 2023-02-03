@@ -33,7 +33,7 @@ describe('Calculator, and beforeEach', () => {
   //   console.log(theCalculator);
   // })
 
-  //test 4.1
+  //test 4.2
   test('should return age in all 4 planet years from input in earth years', () => {
     theCalculator.user1.mercuryUserAge = theCalculator.mercury(user1.userAge);
     theCalculator.user1.venusUserAge = theCalculator.venus(user1.userAge);
@@ -41,7 +41,7 @@ describe('Calculator, and beforeEach', () => {
     theCalculator.user1.jupiterUserAge = theCalculator.jupiter(user1.userAge);
     expect(theCalculator.user1.mercuryUserAge).toEqual(theCalculator.user1.userAge * .24);
     expect(theCalculator.user1.venusUserAge).toEqual(theCalculator.user1.userAge *.62);
-    expect(theCalculator.user1.marsUserAge).toEqual(theCalculator.user.userAge * 1.88);
+    expect(theCalculator.user1.marsUserAge).toEqual(theCalculator.user1.userAge * 1.88);
     expect(theCalculator.user1.jupiterUserAge).toEqual(theCalculator.user1.userAge * 11.86);
   })
 
