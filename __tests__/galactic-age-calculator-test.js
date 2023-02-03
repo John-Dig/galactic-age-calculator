@@ -7,7 +7,9 @@ describe('Calculator, and beforeEach', () => {
   const user1 = new User;
   theCalculator.user1 = user1;
   beforeEach(() => {
+    theCalculator.user1.userName= "Rod Steiger"
     theCalculator.user1.userAge = 100;
+    theCalculator.user1.userBirthday = "01/01/1923"
     //add to this later
   })  
   //test 1.2  
@@ -16,13 +18,13 @@ describe('Calculator, and beforeEach', () => {
     expect(theCalculator).toBeTruthy();
   });
 
-  //test 2.1
+  //test 2.2
   describe('User', () => {
   });
   test('should create new user Object', () => {
-    expect(user1.userName).toEqual(undefined);
-    expect(user1.userAge).toEqual(undefined);
-    expect(user1.userBirthday).toEqual(undefined);
+    expect(theCalculator.user1.userName).toEqual("Rod Steiger");
+    expect(theCalculator.user1.userAge).toEqual(100);
+    expect(theCalculator.user1.userBirthday).toEqual("01/01/1923");
   });
 
   //test 3.1
