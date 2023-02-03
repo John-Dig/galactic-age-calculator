@@ -4,7 +4,7 @@ export class Calculator {
     this.test = test;
   }
   mercury = (earthYears) => {
-    return earthYears * .24 + "wrong";
+    return earthYears * .24;
     
   }
 }
