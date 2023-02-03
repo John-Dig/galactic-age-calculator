@@ -1,7 +1,7 @@
 //business logic
 export class Calculator {
   constructor(test){
-    this.test = wrong;
+    this.test = test;
   }
 }
 
