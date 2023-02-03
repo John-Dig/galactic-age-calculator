@@ -1,6 +1,6 @@
 export class User {
   constructor(userName, userAge, userBirthday){
-    this.userName = wrong;
+    this.userName = userName;
     this.userAge = userAge;
     this.userBirthday = userBirthday;
   }
