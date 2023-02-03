@@ -6,9 +6,8 @@ describe('Calculator, and beforeEach', () => {
   const theCalculator = new Calculator;
   const user1 = new User;
   theCalculator.user1 = user1;
-  
-  
   beforeEach(() => {
+    theCalculator.user1.userAge = 100;
     //add to this later
   })  
   //test 1.2  
