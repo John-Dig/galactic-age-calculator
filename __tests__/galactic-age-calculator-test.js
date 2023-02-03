@@ -20,8 +20,9 @@ test('should create new user Object', () => {
   expect(user1.userBirthday).toEqual(undefined);
 });
 
-// //test 3
-// test('should return age in mercury years from input in earth years', () => {
-//   const theCalculator = new Calculator(100);
+//test 3
+test('should return age in mercury years from input in earth years', () => {
+  const theCalculator = new Calculator(100);
+  expect(theCalculator.mercury).toEqual(24)
   
-// })
+})
