@@ -12,29 +12,24 @@ describe('Calculator, and beforeEach', () => {
     theCalculator.user1.userBirthday = "01/01/1923"
     //add to this later
   })  
-  //test 1.2  
-  test('object Calculator exists', () => {
+  test('1.3: object Calculator exists', () => {
     const theCalculator = new Calculator();
     expect(theCalculator).toBeTruthy();
   });
 
-  //test 2.2
   describe('User', () => {
   });
-  test('should create new user Object', () => {
+  test('2.3: should create new user Object', () => {
     expect(theCalculator.user1.userName).toEqual("Rod Steiger");
     expect(theCalculator.user1.userAge).toEqual(100);
     expect(theCalculator.user1.userBirthday).toEqual("01/01/1923");
   });
 
-  //test 3.1
-  test('should return age in mercury years from input in earth years', () => {
+  test('3.2: should return age in mercury years from input in earth years', () => {
     expect(theCalculator.mercury(100)).toEqual(24)
-    console.log(theCalculator);
   })
 
-  //test 4.2
-  test('should return age in all 4 planet years from input in earth years', () => {
+  test('4.3: should return age in all 4 planet years from input in earth years', () => {
     theCalculator.user1.mercuryUserAge = theCalculator.mercury(user1.userAge);
     theCalculator.user1.venusUserAge = theCalculator.venus(user1.userAge);
     theCalculator.user1.marsUserAge = theCalculator.mars(user1.userAge);
