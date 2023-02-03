@@ -22,7 +22,7 @@ test('should create new user Object', () => {
 
 //test 3
 test('should return age in mercury years from input in earth years', () => {
-  const theCalculator = new Calculator(100);
-  expect(theCalculator.mercury).toEqual(24)
+  const theCalculator = new Calculator();
+  expect(theCalculator.mercury(100)).toEqual(24)
   
 })
