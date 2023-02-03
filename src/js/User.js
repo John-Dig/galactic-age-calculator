@@ -21,4 +21,11 @@ export class User {
     const result = Math.round((this.userAge - yearsSince) / 11.86);
     return result
   }
+  yearsUntilCalc = (ageAtBirthday) => {
+    this.mercuryYearsUntil = Math.round((ageAtBirthday - this.userAge) / .24+ "wrong");
+    this.venusYearsUntil = Math.round((ageAtBirthday - this.userAge) / .62);
+    this.earthYearsUntil = Math.round(ageAtBirthday - this.userAge);
+    this.marsYearsUntil = Math.round((ageAtBirthday - this.userAge) / 1.88);
+    this.jupiterYearsUntil = Math.round((ageAtBirthday - this.userAge) / 11.86);
+  }
 }
