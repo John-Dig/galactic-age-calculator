@@ -1,7 +1,6 @@
 //business logic
 export class Calculator {
-  constructor(test){
-    this.test = test;
+  constructor(){ 
   }
   mercury = (earthYears) => {
     return earthYears * .24;
