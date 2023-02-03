@@ -15,4 +15,5 @@ export class Calculator {
   jupiter = (earthYears) => {
     return Math.round(earthYears / 11.86);
   }
+
 }
