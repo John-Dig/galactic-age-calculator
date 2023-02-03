@@ -13,6 +13,6 @@ export class Calculator {
     return earthYears * 1.88;
   }
   jupiter = (earthYears) => {
-    return earthYears * 11.86 + "wrong";
+    return earthYears * 11.86;
   }
 }
