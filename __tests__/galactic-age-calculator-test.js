@@ -29,15 +29,15 @@ describe('Calculator, and beforeEach', () => {
     expect(theCalculator.mercury(100)).toEqual(417)
   })
 
-  test('4.4: should return age in all 4 planet years from input in earth years', () => {
+  test('4.5: should return age in all 4 planet years from input in earth years', () => {
     theCalculator.user1.mercuryUserAge = theCalculator.mercury(user1.userAge);
     theCalculator.user1.venusUserAge = theCalculator.venus(user1.userAge);
     theCalculator.user1.marsUserAge = theCalculator.mars(user1.userAge);
     theCalculator.user1.jupiterUserAge = theCalculator.jupiter(user1.userAge);
-    expect(theCalculator.user1.mercuryUserAge).toEqual(theCalculator.user1.userAge / .24);
-    expect(theCalculator.user1.venusUserAge).toEqual(theCalculator.user1.userAge /.62);
-    expect(theCalculator.user1.marsUserAge).toEqual(theCalculator.user1.userAge / 1.88);
-    expect(theCalculator.user1.jupiterUserAge).toEqual(theCalculator.user1.userAge / 11.86);
+    expect(theCalculator.user1.mercuryUserAge).toEqual(Math.round(theCalculator.user1.userAge / .24));
+    expect(theCalculator.user1.venusUserAge).toEqual(Math.round(theCalculator.user1.userAge /.62));
+    expect(theCalculator.user1.marsUserAge).toEqual(Math.round(theCalculator.user1.userAge / 1.88));
+    expect(theCalculator.user1.jupiterUserAge).toEqual(Math.round(theCalculator.user1.userAge / 11.86));
   })
 
   test ('5: should return planet ages for years since a specific birthday', () => {

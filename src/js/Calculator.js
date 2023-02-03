@@ -4,15 +4,15 @@ export class Calculator {
   }
   mercury = (earthYears) => {
 
-    return earthYears / .24;
+    return Math.round(earthYears / .24);
   }
   venus = (earthYears) => {
-    return earthYears / .62;
+    return Math.round(earthYears / .62);
   }
   mars = (earthYears) => {
-    return earthYears / 1.88;
+    return Math.round(earthYears / 1.88);
   }
   jupiter = (earthYears) => {
-    return earthYears / 11.86;
+    return Math.round(earthYears / 11.86);
   }
 }
