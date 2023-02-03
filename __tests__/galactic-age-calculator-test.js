@@ -34,7 +34,10 @@ describe('Calculator, and beforeEach', () => {
 
   //test 4
   test('should return age in all 4 planet years from input in earth years', () => {
-    expect(the)
+    expect(theCalculator.user1.mercuryUserAge).toEqual(theCalculator.user1.userAge * .24);
+    expect(theCalculator.user1.venusUserAge).toEqual(theCalculator.user1.userAge *.62);
+    expect(theCalculator.user1.marsUserAge).toEqual(theCalculator.user.userAge * 1.88);
+    expect(theCalculator.user1.jupiterUserAge).toEqual(theCalculator.user1.userAge * 11.86);
   })
 
 
