@@ -6,7 +6,7 @@ export class User {
   }
   mercuryYearsSinceCalc = (yearsSince) => {
     
-    const result = Math.round((this.userAge - yearsSince) / .24 + "wrong");
+    const result = Math.round((this.userAge - yearsSince) / .24);
     return result
   }
   venusYearsSinceCalc = (yearsSince) => {
