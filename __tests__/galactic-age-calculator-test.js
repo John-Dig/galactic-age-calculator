@@ -39,11 +39,11 @@ describe('Calculator, and beforeEach', () => {
     expect(theCalculator.user1.marsUserAge).toEqual(Math.round(theCalculator.user1.userAge / 1.88));
     expect(theCalculator.user1.jupiterUserAge).toEqual(Math.round(theCalculator.user1.userAge / 11.86));
   })
-
-  test ('5: should return planet ages for years since a specific birthday', () => {
-    theCalculator.mercuryYearsSinceCalc(47).toEqual(221);
-    theCalculator.venusYearsSinceCalc(47).toEqual(85);
-    theCalculator.marsYearsSinceCalc(47).toEqual(28);
-    theCalculator.jupiterYearsSinceCalc(47).toEqual(4);
+//5.1 need commit
+  test ('5.1: should return planet ages for years since a specific birthday', () => {
+    expect(user1.mercuryYearsSinceCalc(47)).toEqual(221);
+    expect(user1.venusYearsSinceCalc(47)).toEqual(85);
+    expect(user1.marsYearsSinceCalc(47)).toEqual(28);
+    expect(user1.jupiterYearsSinceCalc(47)).toEqual(4);
   })
 }); //ends BeforeEach------------------------
