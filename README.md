@@ -1,6 +1,6 @@
 # Super Galactic Age Calculator
 
-#### The Super Galactic Age Calculator gives info about relative aging on the 5 planets nearest our sun.
+#### *The Super Galactic Age Calculator gives info about relative aging on the 5 planets nearest our sun.*
 
 #### By John Diggins
 
@@ -14,7 +14,7 @@
 * jest
 
 ## Description
-#### Features
+#### *Features*
 1. The program calculates the age the user would be in Mercury, Venus, Mars, or Jupiter years relative to earth years.
 
 2. It can also calculate how many planet years have passed since a given past birthday of the user.
@@ -40,13 +40,13 @@
 
 
 ## Possible Future Changes
-#### increase DRY, efficiency, modularization:
+#### *Increase DRY, efficiency, modularization:*
 1. The program could have one object rather than two.  
 2. All methods for calculations could be attached to User rather than Calculator.
 3. Have just three methods attached to User: ageOnPlanet(), yearsPassedSinceBday(), yearsUntilBday(). Then each function would take 2 arguments from the user: a planet and a number. 
 4. An array of relative planet orbit times could also be added. Then the proper value could be pulled from the array according to user selection.
 5. If the above were done, and we have data on other solar systems; then we could easily expand the number of planets the program could account for.
-6. It's technically a -Solar- Galactic Calculator.  Only if planets from other star systems in the galaxy were added would it deserve the "Galactic" title.  -Super- ? well...
+6. It's technically a *Solar* Galactic Calculator.  Only if planets from other star systems in the galaxy were added would it deserve the *Galactic* title.  *Super* ? well...
 
 ###### License
 
