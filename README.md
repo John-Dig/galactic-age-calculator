@@ -1,29 +1,50 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### The Super Galactic Age Calculator gives info about relative aging on the 5 planets nearest our sun.
 
-#### By (Your Name Here)
+#### By John Diggins
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Javascript
+* npm
+* webpack
+* babel
+* eslint
+* jest
 
 ## Description
+#### features
+1. The program calculates the age the user would be in Mercury, Venus, Mars, or Jupiter years relative to earth years.
+
+2. It can also calculate how many planet years have passed since a given past birthday of the user.
+
+3. It can also calculate how many planet years will have to pass until a given future birthday of the user.
 
 ## Setup/Installation Requirements
-# correct template by installing babel and jest!!!
-- Installing all packages with $ npm install.
-- Building the project using webpack with $ npm run build
-- Starting a development server with $ npm run start
-- Linting JS files in the src folder with $ npm run lint
-- Running tests with Jest using $ npm run test
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory: galactic-age-calculator
+* open a terminal, then:
+>npm install
+>npm run build
+>npm run lint
+>npm test
+* see that it does what it says it does!
 
 ## Known Bugs
+- Linting leaves 2 "parsing error" messages, still unsure why. It appears not to affect anything negatively.
+- There is no user interface (yet)!
 
-* _Any known issues_
-* _should go here_
 
-## License
+## future possible changes
+#### increase DRY, efficiency, modularization:
+1. The program could have one object rather than two.  
+2. All methods for calculations could be attached to User rather than Calculator.
+3. Have just three methods attached to User: ageOnPlanet(), yearsPassedSinceBday(), yearsUntilBday(). Then each function would take 2 arguments from the user: a planet and a number. 
+4. An array of relative planet orbit times could also be added. Then the proper value could be pulled from the array according to user selection.
+5. If the above were done, and we have data on other solar systems; then we could easily expand the number of planets the program could account for.
+
+###### License
+
+##### Epicodus
+>Copyright (c) 2023 John Diggins
